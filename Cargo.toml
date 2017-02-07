@@ -11,12 +11,12 @@ default = ["ssl"]
 ssl = ["openssl"]
 
 [dependencies]
-log = "0.3"
-rand = "0.3"
-byteorder = "0.4"
+log = "*"
+rand = "*"
+byteorder = "*"
 mqtt3 = { git = "https://github.com/mcornejo/rust-mqtt3.git" }
-url = "^1.2.4"
+url = "*"
 openssl = { version = "0.9", optional = true, features = ["v101", "v102"] }
 
 [dev-dependencies]
-env_logger = "0.3"
+env_logger = "*"
