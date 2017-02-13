@@ -16,8 +16,8 @@ use store::Store;
 
 fn is_ssl(url: &Url) -> result::Result<bool, ()> {
     match url.scheme() {
-        "tcp" | "mqtt" => Ok(true),
-        "tls" | "ssl" | "mqtts" => Ok(false),
+        "tcp" | "mqtt" => Ok(false),
+        "tls" | "ssl" | "mqtts" => Ok(true),
         _ => Err(()),
     }
 }
